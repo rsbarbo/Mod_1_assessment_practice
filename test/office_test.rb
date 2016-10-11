@@ -11,7 +11,7 @@ class OfficeTest < Minitest::Test
 
   def test_it_can_restock_office_supply
     office = Office.new("MSC")
-    office.restock_office_supplies("Pen", 500) # all units in grams
+    office.restock_office_supplies("Pen", 500) 
     assert_equal ["Pen"], office.office_supplies
     office.restock_office_supplies("Pencils", 1500)
     assert_equal ["Pen", "Pencils"], office.office_supplies
